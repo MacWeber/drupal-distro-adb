@@ -6,7 +6,16 @@
  * Perform actions to set up the site for this profile.
  */
 function adb_install() {
-  // Set administration theme
+  // Set site name
+  variable_set('site_name', 'Associação Drupal Brasil');
+
+  // Default country
+  variable_set('site_default_country', 'BR');
+
+  // Default timezone
+  variable_set('date_default_timezone', 'America/Sao_Paulo');
+
+  // Set administration theme.
   variable_set('admin_theme', 'seven');
 
   // Allow visitor account creation, but with administrative approval.
