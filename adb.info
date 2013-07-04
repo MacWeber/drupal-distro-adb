@@ -1,0 +1,65 @@
+name = adb
+description = Install site for adb
+core = 7.x
+
+; ---- Kraftwagen --------------------------------------------------------------
+files[] = adb.profile
+dependencies[] = kw_manifests
+
+; ---- Core required -----------------------------------------------------------
+;dependencies[] = field
+;dependencies[] = field_sql_storage
+;dependencies[] = filter
+;dependencies[] = node
+;dependencies[] = system
+;dependencies[] = text
+;dependencies[] = user
+
+; ---- Core disabled -----------------------------------------------------------
+;dependencies[] = aggregator
+;dependencies[] = color
+;dependencies[] = comment
+;dependencies[] = dashboard
+;dependencies[] = locale
+;dependencies[] = overlay
+;dependencies[] = rdf
+;dependencies[] = toolbar
+
+; ---- Core development --------------------------------------------------------
+env_dependencies[development][] = field_ui
+
+; ---- Core enabled ------------------------------------------------------------
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = file
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = search
+dependencies[] = shortcut
+
+; ---- Contrib development -----------------------------------------------------
+env_dependencies[development][] = admin_devel
+env_dependencies[development][] = coder
+env_dependencies[development][] = coder_review
+env_dependencies[development][] = devel
+;env_dependencies[development][] = drupalforfirebug
+;env_dependencies[development][] = drupalforfirebug_preprocess
+env_dependencies[development][] = module_filter
+env_dependencies[development][] = php
+env_dependencies[development][] = views_ui
+
+; ---- Contrib enabled ---------------------------------------------------------
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = features
+dependencies[] = fe_block
+;dependencies[] = fe_profile
+dependencies[] = views
+;--only if using nginx:
+;dependencies[] = filefield_nginx_progress

@@ -1,0 +1,27 @@
+# ignore modules in contrib, but keep the README.md
+modules/contrib/*
+!modules/contrib/README.md
+
+# ignore modules in kraftwagen, but keep the README.md
+modules/kraftwagen/*
+!modules/kraftwagen/README.md
+
+# OS specific shit
+.DS_Store
+Thumbs.db
+
+# Patches
+*.patch
+
+# Packages #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+#temp files
+*.swp
