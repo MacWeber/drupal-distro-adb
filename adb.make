@@ -35,5 +35,6 @@ projects[token][version]                                   = "1.5"
 projects[transliteration][version]                         = "3.1"
 projects[uuid][version]                                    = "1.0-alpha4"
 projects[views][version]                                   = "3.7"
+projects[webform][version]                                 = "3.19"
 
 ; ---- Custom modules ----------------------------------------------------------

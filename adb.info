@@ -61,5 +61,7 @@ dependencies[] = features
 dependencies[] = fe_block
 ;dependencies[] = fe_profile
 dependencies[] = views
+dependencies[] = webform
+
 ;--only if using nginx:
 ;dependencies[] = filefield_nginx_progress
