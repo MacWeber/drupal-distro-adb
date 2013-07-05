@@ -17,6 +17,7 @@ drush cc drush
 ```
 cd /var/www
 mkdir adb
+cd adb
 git clone git@github.com:MacWeber/drupal-distro-adb.git src
 ```
 
